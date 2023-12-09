@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiketin</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styletiket.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<main class="pricetiers_main_wrapper"> 
+    <!--Navbar start-->
+    <nav>
+        <a href="" class="">
+          <img src="/image/navbar/logo3.png" class="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="" class=""><img src="/image/navbar/mail.svg" /></a>
+          </li>
+        </ul>
+        <img
+          src="/image/navbar/user.png"
+          class="user-pic"
+          onclick="toggleMenu()"
+        />
+  
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="/image/navbar/user.png" />
+              <h3>James Sudirman</h3>
+            </div>
+            <hr />
+  
+            <a href="" class="sub-menu-link">
+              <img src="/image/navbar/profile.png" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="" class="sub-menu-link">
+              <img src="/image/navbar/logout.png" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end-->
+
+    <div class="dekstopheading">
+        <div class="dekstopdetail">
+            <a href="/halaman_tujuan.html">
+            <button class="chevron-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+            </a>
+            <h3 class="h3size">Order Details</h3>
+        </div>
+    </div>
+
+    <div class="containerprice">
+        <form>
+            <div class="pricetierswrap">
+                <div class="containerpackage">
+                    <div class="packageselectionwrap">
+                        <div class="packageselectionheading">
+                            <h5 class="text_size_b1 _weight_bold">Selected Package</h5>
+                            
+                        </div>
+                        <div class="packageselection_wrappackagelist" style="max-width: 392px;">
+                            <div id="packageselection_packagelist">
+                                <div class="packageselection_packageitem active" data-price="1525000">
+                                    <div class="packageselection_packageitem2" >
+                                        <div class="packagecardwrap" style="border-color:#007bff;">
+                                            <div class="packagecardheading">
+                                                <h5 title="YELLOW B" class="textvariant_highEmphasis_size_b3">YELLOW C
+                                                </h5>
+                                            </div>
+                                            <div class="packagecardmainprice">
+                                                <span class="textvariant_alert">IDR 1,525,000</span>
+                                            </div>
+                                            <div class="packagecard_divider p2_horizontal"></div>
+                                            <p title="Ticket price includes tax and ticket processing fee of IDR 25,000,-."
+                                                class="packagecardsubtitle">Ticket price includes tax and ticket
+                                                processing fee of IDR 25,000,-.</p>
+                                            <div class="packagebenefit_package_benefit" data-testid="package-benefit">
+                                                <div class="PackageBenefit_feature_with_icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                        viewBox="0 0 24 24" width="16" height="16">
+                                                        <defs>
+                                                            <path id="duration-zohsp5215a"
+                                                                d="M17 .972c.552 0 1 .448 1 1 0 .553-.448 1-1 1h-.554l-4.423 8 4.423 8H17c.552 0 1 .448 1 1 0 .553-.448 1-1 1H1c-.552 0-1-.447-1-1 0-.552.448-1 1-1h.557l4.456-8-4.456-8H1c-.552 0-1-.447-1-1 0-.552.448-1 1-1h16zm-3.49 2.951H4.519L8.342 9.96v2.045l-.62.99-.723.948 4.478.59-1.862-2.539V9.96l3.896-6.036z">
+                                                            </path>
+                                                        </defs>
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <g>
+                                                                <path d="M0.323 0H24.323V24H0.323z"></path>
+                                                                <g transform="translate(3 1.028)">
+                                                                    <use fill="#AEB2BE" xlink:href="#duration-zohsp5215a">
+                                                                    </use>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </svg><span class="_text _variant_highEmphasis _size_b3">Valid on the
+                                                        selected date</span>
+                                                </div>
+                                                <div class="divider_vertical_default">
+                                                </div>
+                                                <div class="PackageBenefit_feature_with_icon">
+                                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="16">
+                                                        <path
+                                                            d="M19.4896 9.20478H15.5242L16.9723 2.58558C17.0209 2.36599 17.0015 2 16.6613 2C16.4991 2.00547 16.3417 2.06049 16.2075 2.15863C16.0732 2.25677 15.9677 2.39397 15.9032 2.55421L9.09989 13.1784C8.88607 13.5026 9.03186 13.879 9.38174 13.879H13.4152L11.967 20.3623C11.8115 21.0315 12.6279 21.2511 13.0458 20.6446L19.8492 10.1877C20.1602 9.73808 19.9658 9.20478 19.4896 9.20478Z"
+                                                            fill="#AEB2BE"></path>
+                                                        <path
+                                                            d="M4.68945 6.53906C4.13717 6.53906 3.68945 6.98678 3.68945 7.53906C3.68945 8.09135 4.13717 8.53906 4.68945 8.53906H9.76945C10.3217 8.53906 10.7695 8.09135 10.7695 7.53906C10.7695 6.98678 10.3217 6.53906 9.76945 6.53906H4.68945Z"
+                                                            fill="#AEB2BE"></path>
+                                                        <path
+                                                            d="M4.92969 16.5391C4.92969 15.9868 5.3774 15.5391 5.92969 15.5391H8.34969C8.90197 15.5391 9.34969 15.9868 9.34969 16.5391C9.34969 17.0913 8.90197 17.5391 8.34969 17.5391H5.92969C5.3774 17.5391 4.92969 17.0913 4.92969 16.5391Z"
+                                                            fill="#AEB2BE"></path>
+                                                        <path
+                                                            d="M4.4707 11.3203C3.91842 11.3203 3.4707 11.768 3.4707 12.3203C3.4707 12.8726 3.91842 13.3203 4.4707 13.3203H6.4107C6.96299 13.3203 7.4107 12.8726 7.4107 12.3203C7.4107 11.768 6.96299 11.3203 6.4107 11.3203H4.4707Z"
+                                                            fill="#AEB2BE"></path>
+                                                    </svg>
+                                                    <span class="text _variant_highEmphasis _size_b3">
+                                                        <div class="PackageBenefit_feature_with_dots">Instant Confirmation
+                                                            <span class="_text _variant_lowEmphasis">No reservation
+                                                                needed</span>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                                <div class="divider_vertical_default">
+                                                </div>
+                                                <div class="PackageBenefit_feature_with_icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none" viewBox="0 0 24 24" width="16" height="16">
+                                                        <path fill="#AEB2BE" fill-rule="evenodd"
+                                                            d="M3.707 2.293a1 1 0 0 0-1.497 1.32l.083.094 6.443 6.445-.472.472a.562.562 0 0 0 0 .795l1.34 1.34a.561.561 0 0 0 .796 0 .563.563 0 0 0 0-.795l-.4-.4h.148l2.864 2.865c.06.243.27.35.394.394l6.887 6.89a1 1 0 0 0 1.497-1.32l-.083-.095L20.41 19h.491a1.1 1.1 0 0 0 1.1-1.1V6.1A1.1 1.1 0 0 0 20.9 5H6.413L3.707 2.293ZM15.651 14.24l1.515 1.516c.36-1.163 1.305-1.734 2.834-1.734V10c-2 0-3-1-3-3H8.413l3.439 3.44H13.5c1.554 0 2.819.708 2.819 2.263 0 .692-.252 1.194-.668 1.537Zm-.779-.779c.202-.151.322-.389.322-.758 0-.934-.76-1.138-1.694-1.138h-.524l1.896 1.896ZM2.322 5.322c-.199.2-.322.474-.322.778v11.8A1.1 1.1 0 0 0 3.1 19H16l-2-2H7c0-2-1-2.978-3-2.978V10c1 0 1.75-.25 2.25-.75L2.322 5.322Z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg><span class="_text _variant_highEmphasis _size_b3">Refund not
+                                                        allowed</span>
+                                                </div>
+                                                <div class="divider_vertical">
+                                                </div>
+                                                <div class="PackageBenefit_feature_with_icon PackageBenefit_feature_with_subtitle_">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="16"
+                                                        height="16">
+                                                        <path fill="#AEB2BE" fill-rule="evenodd"
+                                                            d="M11.962 6.105a5.062 5.062 0 0 1 5.933-4.011 5.062 5.062 0 0 1 4.011 5.933 5.062 5.062 0 0 1-5.933 4.011 5.062 5.062 0 0 1-4.01-5.933Zm5.035 2.778 2.893-2.757h.01a.66.66 0 0 0-.052-.93.66.66 0 0 0-.93.053l-2.423 2.224-1.013-1.075a.65.65 0 0 0-.93-.032.65.65 0 0 0-.03.93l1.503 1.598c.272.282.71.282.972-.01Zm-4.983 5.785v.002h.01l-.01-.002Zm0-3.393v3.393c-.14-.024-1.685-.28-3.259-.28-1.65 0-3.3.282-3.3.282V9.552s.898-1.723 3.238-1.723c.7 0 1.253.156 1.723.376a4.807 4.807 0 0 0 1.598 3.07Zm-8.2 1.066c.46 0 .826.376.826.825h-.01v.825H2.99v-.825a.82.82 0 0 1 .825-.825Zm9.37 3.51c-.741-.22-2.256-.565-4.45-.565-2.193 0-3.676.345-4.397.565-.313.093-.501.386-.501.71v1.107c0 .45.365.825.825.825h8.22c.45 0 .825-.365.825-.825v-1.097c0-.334-.198-.627-.511-.72h-.01Zm-.355-2.685c0-.458.373-.822.82-.825.457.003.82.378.82.825v.825h-1.64v-.825Zm.82-.825h.005-.01.005Zm-1.562 6.967h-6.8c-.365.052-.658.397-.658.825 0 .45.335.825.742.825h6.81c.366-.052.659-.397.659-.825 0-.45-.335-.825-.742-.825h-.01Z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg><span class="_text _variant_highEmphasis _size_b3">
+                                                        <div class="PackageBenefit_feature_with_dots">Seat selected
+                                                            automatically<span class="text _variant_lowEmphasis">The system
+                                                                will pick a seat number.</span></div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="packagecard_divider p2_horizontal" style="margin-top: 8px;">
+                                            </div>
+                                            <p class="Mrpkt_text Mrpkt_variant_lowEmphasis Mrpkt_size_b3">See redemption
+                                                info, ticket coverage, and Terms and Conditions&nbsp;<a
+                                                    href="/to-do/lee-junho-in-jakarta/packages/6?hideCTA=true"
+                                                    class="Mrpkt_text Mrpkt_variant_activity Mrpkt_weight_bold"
+                                                    style="text-decoration: none;">here.</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricetier_arrow_indicator">
+                    <div class="TicketQuantitySelection_wrapper_">
+                        <div class="TicketQuantitySelection_title_section_">
+                            <h5 class="Mrpkt_text Mrpkt_size_b1 Mrpkt_weight_bold">Ticket Quantity</h5>
+                        </div>
+                        <div class="TicketQuantitySelection_ticket_list_">
+                            <div class="TicketQuantitySelection_card_wrapper_">
+                                <div class="TicketQuantity_wrapper_">
+                                    <div class="TicketQuantity_main_content_">
+                                        <div class="TicketQuantity_ticket_name_">
+                                            <span class="Mrpkt_text Mrpkt_size_b2 Mrpkt_weight_bold">Pax</span>
+                                        </div>
+                                        <div class="TicketQuantity_ticket_content_">
+                                            <div class="TicketQuantity_ticket_price_">
+                                                <span class="textvariant_alert2">IDR 1,525,000</span>
+                                            </div>
+                                            <div class="TicketQuantity_ticket_qty_">
+                                                <div class="MrpFs_container">
+                                                    <button type="button" class="MrpFs_operation_button">
+                                                        <svg class="MrpFs_minus_icon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 24 24" width="20" height="20">
+                                                            <defs>
+                                                                <path id="minus-p27b31py3a"
+                                                                    d="M4 11h16c.552 0 1 .448 1 1 0 .513-.386.936-.883.993L20 13H4c-.552 0-1-.448-1-1 0-.513.386-.936.883-.993L4 11z">
+                                                                </path>
+                                                            </defs>
+                                                            <g fill="none" fill-rule="evenodd">
+                                                                <g>
+                                                                    <path d="M0 0H24V24H0z"></path>
+                                                                    <mask id="minus-97tc2g4kob" fill="#fff">
+                                                                        <use xlink:href="#minus-p27b31py3a"></use>
+                                                                    </mask>
+                                                                    <use fill="#007BFF" fill-rule="nonzero"
+                                                                        xlink:href="#minus-p27b31py3a"></use>
+                                                                    <path fill="#007BFF" d="M0 0H24V24H0z"
+                                                                        mask="url(#minus-97tc2g4kob)"></path>
+                                                                </g>
+                                                            </g>
+                                                        </svg></button>
+                                                    <div class="MrpFs_quantity_wrapper"><input
+                                                            class="MrpFs_quantity_input" disabled="" type="number"
+                                                            min="0" max="4" step="1" pattern="[0-9]*" value="1"></div>
+                                                    <button type="button" class="MrpFs_operation_button"><svg
+                                                            class="MrpFs_plus_icon" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 24 24" width="20" height="20">
+                                                            <defs>
+                                                                <path id="plus-tmzxt3buua"
+                                                                    d="M12.001 3c.513 0 .936.387.993.884l.007.117v6.98H20c.552 0 1 .45 1 1.002 0 .514-.386.937-.883.995l-.117.006h-6.999v7.015c0 .553-.448 1.001-1 1.001-.513 0-.936-.387-.993-.884L11 19.999v-7.015H4c-.552 0-1-.448-1-1 0-.514.386-.938.883-.995l-.875-.007 7.993-.001v-6.98c0-.553.448-1.001 1-1.001z">
+                                                                </path>
+                                                            </defs>
+                                                            <g fill="none" fill-rule="evenodd">
+                                                                <g>
+                                                                    <path d="M0 0H24V24H0z"></path>
+                                                                    <use fill="#007BFF" fill-rule="nonzero"
+                                                                        xlink:href="#plus-tmzxt3buua"></use>
+                                                                </g>
+                                                            </g>
+                                                        </svg></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="TotalPayment_wrapper_">
+                        <div class="TotalPayment_desktop_date_view_"><span
+                                class="Mrpkt_text Mrpkt_size_b2">Date</span><span
+                                class="Mrpkt_text Mrpkt_size_b2 Mrpkt_weight_bold" style="justify-self: end;">25 Nov
+                                2023</span><span class="Mrpkt_text Mrpkt_size_b2">Time Slot</span><span
+                                class="Mrpkt_text Mrpkt_size_b2 Mrpkt_weight_bold"
+                                style="justify-self: end;">18:30</span></div>
+                        <div class="packagecard_divider p2_horizontal" style="margin: 16px 0px;"></div>
+                        <div class="TotalPayment_desktop_view_"><span class="Mrpkt_text Mrpkt_size_b2"
+                                style="grid-area: price-title;">Total Payment</span>
+                                
+                                <a href="/form.html" class="MaRpF_button MaRpF_size_large MaRpF_horizontal_padding MaRpF_variant_primary" 
+                                style="grid-area: book-btn; justify-self: end; text-decoration: none;">Book</a>
+                                
+                                <button type="button" class="TotalPayment_price_ Mrpkt_text Mrpkt_size_b1 Mrpkt_weight_bold" style="grid-area: price-value;">IDR 0
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/haltiket.js"></script>
+    <script src="/js/harga.js"></script>
+</body>
+
+</html>

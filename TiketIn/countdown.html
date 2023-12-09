@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiketin</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/stylecd.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<main class="pricetiers_main_wrapper"> 
+    <!--Navbar start-->
+    <nav>
+        <a href="" class="">
+          <img src="image/navbar/logo3.png" class="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="" class=""><img src="image/navbar/mail.svg" /></a>
+          </li>
+        </ul>
+        <img
+          src="image/navbar/user.png"
+          class="user-pic"
+          onclick="toggleMenu()"
+        />
+  
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="image/navbar/user.png" />
+              <h3>James Sudirman</h3>
+            </div>
+            <hr />
+  
+            <a href="" class="sub-menu-link">
+              <img src="image/navbar/profile.png" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="" class="sub-menu-link">
+              <img src="image/navbar/logout.png" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end-->
+
+    <div class="dekstopheading">
+        <div class="dekstopdetail">
+            <a href="/halaman_tujuan.html">
+            <button class="chevron-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+            </a>
+            <h3 class="h3size">Order Details</h3>
+        </div>
+    </div>
+
+    <div class="containerprice">
+        <form>
+            <div class="pricetierswrap">
+                <div class="pricetier_arrow_indicator">
+                    <div class="TicketQuantitySelection_wrapper">
+                        <div class="countdown-wrapper">
+                            <span class="truncate-text">Complete payment in</span>
+                            <ul class="countdown-list">
+                                <li class="countdown-item">00</li>
+                                <li class="countdown-separator">:</li>
+                                <li class="countdown-item">00</li>
+                                <li class="countdown-separator">:</li>
+                                <li class="countdown-item">00</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tulisanketerangan">
+                            <h5 class="contactdetail"><b>Bca Virtual Account</b></h5>
+                            <span class="Banktext"> Penjelasan rinci mengenai kirim ke mana
+                                TnC
+                                dll</span>
+                        </div>
+                        
+
+                        <div class="TotalPayment_wrapper">
+                            <div class="packagecard_divider p2_horizontal" style="margin: 16px 40px;"></div>
+                            <div class="TotalPayment_desktop_view"><span class="MaRpf_text MaRpf_size_b2"
+                                        style="grid-area: price-title;">Total Payment</span><button type="button" class="TotalPayment_price MaRpf_text MaRpf_size_b1 MaRpf_weight_bold" style="grid-area: price-value;">IDR 0
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </form>
+</main>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <section class="figure full-width">
+                <div class="image">
+                        <div>
+                            <img src="/image/random/kucing1.png" alt="logo" loading="lazy">
+                        </div>
+                </div>
+                <div class="content">
+                    <h2 class="title text size-h3">You've reached the payment time limit</h2>
+                    <p class="description text">The previous booking is considered failed. Please re-order and pay before the time limit ends.</p>
+                    <div class="footer full-width">
+                        <a href="halaman_tujuan.html"><button type="buttons" class="button size-large variant-primary" id="Re-order-modal">Re-order</button></a>
+                    </div>                            
+                </div>
+            </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/countdown.js"></script>
+<script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

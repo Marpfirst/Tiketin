@@ -1,0 +1,387 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Navbar start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 1px;
+}
+
+.sub-menu p {
+  margin-top: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+/* Navbar end */
+
+.main-color {
+  background-color: #0b0b0b !important;
+}
+
+.fotobesar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.fotobesar img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20%;
+}
+
+.event-details {
+  text-align: center;
+}
+
+.event-location {
+  font-size: 16px;
+  color: #555;
+}
+
+.event-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.event-date {
+  font-size: 18px;
+  color: #888;
+}
+
+.event-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.event-divider hr {
+  flex: 1;
+  border: 0.5px solid #aaa;
+}
+
+.highlight {
+  padding: 0 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  content: "\2022";
+  margin-right: 5px;
+}
+
+.highlight p::before {
+  content: "\2022";
+  margin-right: 5px;
+}
+
+.card {
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: var(--card-padding);
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  padding-left: 30px;
+  margin: 10px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Menambahkan shadow (bayangan) pada card */
+}
+
+/*  Margin antar card*/
+.card .card-body {
+  margin-bottom: 30px;
+}
+
+.chevron-down {
+  cursor: pointer;
+}
+
+.chevron-up {
+  display: none;
+  cursor: pointer;
+}
+
+.text.weight_bold {
+  margin-right: 180px;
+}
+
+.chevron-down,
+.chevron-up {
+  margin-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.packageselection_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #e8ecf7;
+  border-radius: 15px;
+}
+
+.left-section {
+  flex: 2;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#image1 {
+  max-width: 100%;
+  max-height: 300px;
+  display: none;
+}
+
+.clickable-image {
+  cursor: zoom-in;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 60px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 70px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* Tambahkan garis di atas tombol "Price" dan harga pada card */
+.card .d-flex.justify-content-between {
+  border-top: 1px solid #ccc;
+  padding-top: 10px; /* Menambahkan jarak dari garis ke konten di atasnya */
+}
+
+/* Tambahkan padding ke tombol tiket untuk membuatnya lebih lebar */
+.card .btn-primary {
+  padding: 10px 30px; /* Sesuaikan padding sesuai kebutuhan Anda */
+}
+
+/* Mengatur warna teks harga menjadi biru */
+.card .card-body h4 {
+  color: blue;
+}

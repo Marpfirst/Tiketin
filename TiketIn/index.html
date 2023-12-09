@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta harset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Saya</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e8fa2e31b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navbar start-->
+    <nav>
+      <a href="" class="">
+        <img src="image/navbar/logo3.png" class="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="" class=""><img src="image/navbar/mail.svg" /></a>
+        </li>
+      </ul>
+      <img
+        src="image/navbar/user.png"
+        class="user-pic"
+        onclick="toggleMenu()"
+      />
+
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="image/navbar/user.png" />
+            <h3>James Sudirman</h3>
+          </div>
+          <hr />
+
+          <a href="" class="sub-menu-link">
+            <img src="image/navbar/profile.png" />
+            <p>Edit Profile</p>
+            <span>></span>
+          </a>
+          <a href="" class="sub-menu-link">
+            <img src="image/navbar/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <div class="fotobesar">
+      <img src="/image/background hal.jpg" width="100%" />
+    </div>
+
+    <div class="container-fluid banner dflex align-center -py5">
+      <div class="container">
+        <div class="data" style="padding-top: 50px">
+          <div class="top">
+            <!-- searchbar-->
+            <div class="searchBar">
+              <div class="searchBar-content">
+                <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                <input
+                  placeholder="Cari..."
+                  id="searchBar"
+                  name="searchBar"
+                  type="text"
+                  class="searchBar-input"
+                />
+              </div>
+            </div>
+            <!-- dropdown -->
+            <div class="dropdown">
+              <i class="fa-solid fa-location-dot"></i>
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Lokasi
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#" data-target="Semua lokasi"
+                    >Semua Lokasi</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-target="Jakarta"
+                    >Jakarta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-target="Bandung"
+                    >Bandung</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-target="Yogyakarta"
+                    >Yogyakarta</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-target="Solo">Solo</a>
+                </li>
+              </ul>
+            </div>
+            <hr
+              style="
+                clear: both;
+                margin: 15px 0;
+                border: 1px solid #eee;
+                border-top: none;
+              "
+            />
+          </div>
+
+          <!-- baris baru -->
+          <div class="row" style="padding-top: 100px">
+            <div class="col-sm-6 col-lg-3">
+              <h3 id="event-count" class="event-title">6 Event terlihat</h3>
+            </div>
+
+            <!-- sort button -->
+            <div class="col-sm-6 col-lg-3">
+              <div
+                class="filter-condition"
+                style="margin-left: 840px; margin-top: 9px"
+              >
+                <select name="" id="select">
+                  <option value="Default">Default</option>
+                  <option value="LowToHigh">Low to high</option>
+                  <option value="HighToLow">High to low</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- calendar -->
+            <div class="col-sm-6 col-lg-3">
+              <div class="form-question" style="margin-left: 350px">
+                <div class="input-container">
+                  <input
+                    type="date"
+                    id="dateInput"
+                    min="YYYY-MM-DD"
+                    class="date-input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Error Card -->
+        <div class="row" style="padding-top: 30px" class="items">
+          <div id="no-events-message" class="text-center">
+            <img src="/image/random/kucing1.png" width="200px" height="200" />
+            <h2>Sorry, cannot find anything here</h2>
+            <p class="errortext">
+              Try resetting your search filter to find other event
+            </p>
+            <div class="errorbutton">
+              <button type="button" class="btn btn-danger">Reset filter</button>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Newjeans</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-05-19"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Jakarta</p>
+                  <h4 class="text-center" data-price="1000000">
+                    IDR 1.000.000
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Nadine</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-05-20"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Yogyakarta</p>
+                  <h4 class="text-center" data-price="300000">IDR 300.000</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Queen</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-05-26"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Jakarta</p>
+                  <h4 class="text-center" data-price="3000000">
+                    IDR 2.000.000
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Nostrademous fest</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-09-30"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Jakarta</p>
+                  <h4 class="text-center" data-price="1500000">
+                    IDR 1.500.000
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">My Chemical Romance</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-10-24"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Solo</p>
+                  <h4 class="text-center" data-price="1500000">
+                    IDR 1.500.000
+                  </h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 hovered-card">
+            <a href="halaman_tujuan.html">
+              <div class="card">
+                <img src="/image/banner/6.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Warisan Nusantara</h5>
+                  <p
+                    class="card-text"
+                    data-date="2024-12-19"
+                    style="margin-bottom: 1px"
+                  >
+                    Tanggal
+                  </p>
+                  <p class="card-text2">Jakarta</p>
+                  <h4 class="text-center" data-price="250000">IDR 250.000</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/program.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

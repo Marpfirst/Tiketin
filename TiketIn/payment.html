@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiketin</title>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/stylepayment.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<main class="pricetiers_main_wrapper"> 
+     <!--Navbar start-->
+     <nav>
+        <a href="" class="">
+          <img src="image/navbar/logo3.png" class="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="" class=""><img src="image/navbar/mail.svg" /></a>
+          </li>
+        </ul>
+        <img
+          src="image/navbar/user.png"
+          class="user-pic"
+          onclick="toggleMenu()"
+        />
+  
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="image/navbar/user.png" />
+              <h3>James Sudirman</h3>
+            </div>
+            <hr />
+  
+            <a href="" class="sub-menu-link">
+              <img src="image/navbar/profile.png" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="" class="sub-menu-link">
+              <img src="image/navbar/logout.png" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end-->
+
+    <div class="dekstopheading">
+        <div class="dekstopdetail">
+            <a href="/halaman_tujuan.html">
+            <button class="chevron-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                </svg>
+            </button>
+            </a>
+            <h3 class="h3size">Order Details</h3>
+        </div>
+    </div>
+
+    <div class="containerprice">
+        <form>
+            <div class="pricetierswrap">
+                <div class="pricetier_arrow_indicator">
+                    <div class="TicketQuantitySelection_wrapper">
+                        <div class="payment-header-container">
+                            <span class="header-text"><b>Payment Method</b></span>
+                        </div>
+                        
+                        <form class="radio">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="method1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <picture><img src="/image/bank/bankbca.png" alt="logo"></picture>
+                                  BCA Virtual Account
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="method2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    <picture><img src="/image/bank/bankmandiri.png" alt="logo"></picture>
+                                    Mandiri Virtual Account
+                                </label>
+                            </div>
+                         </form>
+
+                            <div class="TotalPayment_wrapper">
+                                <div class="packagecard_divider p2_horizontal" style="margin: 25px 0px;"></div>
+                                <div class="TotalPayment_desktop_view"><span class="MaRpf_text MaRpf_size_b2"
+                                        style="grid-area: price-title;">Total Payment</span>
+
+                                       <a href="countdown.html" type="submit" class="MaRpF_button MaRpF_size_large" id="paymentButton"
+                                        style="grid-area: book-btn; justify-self: end;" disabled>Pay with Virtual Account</a>
+                                        
+                                        <button type="button" class="TotalPayment_price MaRpf_text MaRpf_size_b1 MaRpf_weight_bold" style="grid-area: price-value;">IDR 0
+                                </div>
+                            </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </form>
+    </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+
+</html>

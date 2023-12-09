@@ -1,0 +1,447 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Navbar start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 1px;
+}
+
+.sub-menu p {
+  margin-top: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+/* Navbar end */
+
+.main-color {
+  background-color: #0b0b0b !important;
+}
+
+.dekstopheading {
+  padding-bottom: 30px;
+  background-color: rgb(253, 253, 255);
+  border-top: 1px solid #e8d8d8;
+}
+
+.dekstopdetail {
+  display: flex;
+  align-items: center;
+  border-top: #000000;
+}
+
+.chevron-left {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0; /* Menghapus jarak kiri */
+  margin-right: 10px; /* Menambahkan jarak kanan ke tombol chevron */
+}
+
+.chevron-left svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.h3size {
+  margin-top: 28px;
+}
+
+.pricetierswrap {
+  background-color: #f4f7fe;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  .pricetierswrap > :last-child {
+    margin-left: auto;
+    width: 40%;
+    margin-right: 10%;
+  }
+}
+
+.containerpackage {
+  max-width: 430px;
+}
+
+.pricetier_arrow_indicator {
+  padding-bottom: 100px;
+}
+
+/* Menambahkan garis pemisah di antara teks "YELLOW A" dan "See redemption" */
+.packagecard_divider.p2_horizontal {
+  width: 100%;
+  border-top: 1px solid #d8dce8;
+}
+
+@media (min-width: 840px) {
+  .divider {
+    --border-main-width: 1px;
+    --border-bold-width: 8px;
+  }
+}
+
+.pricetierswrap .pricetiers_arrow_indicator {
+  position: relative;
+}
+
+@media (min-width: 840px) {
+  .TicketQuantitySelection_wrapper {
+    margin-top: 8px;
+    padding: 20px 16px;
+  }
+}
+
+.TicketQuantitySelection_wrapper {
+  padding: 16px 40px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background-color: #e7f2ff;
+  box-shadow: 20px 20px 60px #a2a9b3, -20px -20px 60px #ffffff;
+}
+
+@media (min-width: 840px) {
+  .TotalPayment_wrapper {
+    margin-top: 8px;
+    padding: 20px 40px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.TotalPayment_wrapper {
+  padding: 16px 0px;
+  margin-top: 6px;
+}
+
+@media (min-width: 840px) {
+  .TicketQuantitySelection_wrapper .TicketQuantitySelection_title_section {
+    margin-bottom: 8px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.MaRpf_weight_bold {
+  font-weight: 700;
+}
+
+.MaRpf_size_b1 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pricetierswrap {
+  display: flex;
+  flex-direction: row; /* Mengatur arah flex ke horizontal */
+  justify-content: space-between;
+  align-items: center; /* Mengatur alignment ke tengah vertikal */
+}
+
+.packagecardwrap {
+  margin-left: 20px;
+}
+
+.text_size_b1._weight_bold {
+  font-weight: bold;
+  /* Gaya lain sesuai kebutuhan Anda */
+}
+
+.text_size_b3 {
+  font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+  margin-left: 10px; /* Menambahkan jarak antara .text_size_b1._weight_bold dan .text_size_b3 */
+  white-space: nowrap; /* Mencegah teks melingkar jika terlalu panjang */
+}
+
+.tulisanketerangan {
+  margin-bottom: 100px;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "price-title book-btn"
+    "price-value book-btn";
+  grid-row-gap: 6px;
+  row-gap: 6px;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view .TotalPayment_price {
+  background-color: unset;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+.mb-3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+  position: relative;
+}
+
+/* Countdown*/
+.countdown-wrapper {
+  align-items: center;
+  justify-content: space-between; /* Menjadikan .truncate-text dan .countdown-list terpisah di sebelah kiri dan kanan */
+  margin-top: 5%;
+  margin-bottom: 10%;
+  display: flex;
+  border: 1px solid #000000;
+  padding: 10px; /* Menambahkan padding untuk memberikan ruang antara border dan elemen di dalamnya */
+  box-sizing: border-box; /* Mencegah penambahan padding dari mengubah lebar elemen */
+}
+
+.truncate-text {
+  font-size: 20px;
+}
+
+.countdown-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2%;
+  display: flex;
+  align-items: center; /* Menambah align-items untuk menyelaraskan vertikal dengan .truncate-text */
+}
+
+.countdown-item,
+.countdown-separator {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.countdown-separator {
+  color: #0077f7;
+}
+
+.countdown-item {
+  border-radius: 11px;
+  background-color: #0077f7;
+  text-align: center;
+  width: 30px;
+  color: #e7eaf2;
+}
+
+.banktext {
+  font-size: 30px;
+}
+
+/* Modal */
+#modal-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 400px; /* Set the maximum width for the modal */
+  width: 100%;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.figure {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.variant-primary {
+  background-color: #0077f7; /* Your primary color */
+}
+
+.modal-dialog {
+  z-index: 1000;
+  animation: modal-dialog-fade-in 0.3s linear both;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer.full-width {
+  text-align: center; /* Center the button within the div */
+}
+
+.footer.full-width button {
+  width: 100%; /* Make the button full width */
+  border-radius: 10px;
+}

@@ -1,0 +1,420 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Navbar start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 1px;
+}
+
+.sub-menu p {
+  margin-top: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+/* Navbar end */
+
+.main-color {
+  background-color: #0b0b0b !important;
+}
+
+.dekstopheading {
+  padding-bottom: 30px;
+  background-color: rgb(253, 253, 255);
+  border-top: 1px solid #e8d8d8;
+}
+
+.dekstopdetail {
+  display: flex;
+  align-items: center;
+  border-top: #000000;
+}
+
+.chevron-left {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0; /* Menghapus jarak kiri */
+  margin-right: 10px; /* Menambahkan jarak kanan ke tombol chevron */
+}
+
+.chevron-left svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.h3size {
+  margin-top: 28px;
+}
+
+.pricetierswrap {
+  background-color: #f4f7fe;
+  width: 100%;
+}
+
+@media (min-width: 840px) {
+  .pricetierswrap > :last-child {
+    margin-left: auto;
+    width: 40%;
+    margin-right: 10%;
+  }
+}
+
+.containerpackage {
+  max-width: 430px;
+}
+
+.pricetier_arrow_indicator {
+  padding-bottom: 100px;
+}
+
+/* Menambahkan garis pemisah di antara teks "YELLOW A" dan "See redemption" */
+.packagecard_divider.p2_horizontal {
+  width: 100%;
+  border-top: 1px solid #d8dce8;
+}
+
+@media (min-width: 840px) {
+  .divider {
+    --border-main-width: 1px;
+    --border-bold-width: 8px;
+  }
+}
+
+.pricetierswrap .pricetiers_arrow_indicator {
+  position: relative;
+}
+
+@media (min-width: 840px) {
+  .TicketQuantitySelection_wrapper {
+    margin-top: 8px;
+    padding: 20px 16px;
+    box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.TicketQuantitySelection_wrapper {
+  padding: 16px 40px;
+  margin-top: 6px;
+  border-radius: 8px;
+  background-color: #e7f2ff;
+  box-shadow: 20px 20px 60px #a2a9b3, -20px -20px 60px #ffffff;
+}
+
+@media (min-width: 840px) {
+  .TotalPayment_wrapper {
+    margin-top: 8px;
+    padding: 20px 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.TotalPayment_wrapper {
+  padding: 0px 10px;
+
+  margin-bottom: 50px;
+}
+
+@media (min-width: 840px) {
+  .TicketQuantitySelection_wrapper .TicketQuantitySelection_title_section {
+    margin-bottom: 8px;
+  }
+}
+
+.MaRpf_weight_bold {
+  font-weight: 700;
+}
+
+.MaRpf_size_b1 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.pricetierswrap {
+  display: flex;
+  flex-direction: row; /* Mengatur arah flex ke horizontal */
+  justify-content: space-between;
+  align-items: center; /* Mengatur alignment ke tengah vertikal */
+}
+
+.packagecardwrap {
+  margin-left: 20px;
+}
+
+.text_size_b1._weight_bold {
+  font-weight: bold;
+  /* Gaya lain sesuai kebutuhan Anda */
+}
+
+.text_size_b3 {
+  font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+  margin-left: 10px; /* Menambahkan jarak antara .text_size_b1._weight_bold dan .text_size_b3 */
+  white-space: nowrap; /* Mencegah teks melingkar jika terlalu panjang */
+}
+
+/* CSS di atas elemen MaRpf_text, MaRpf_variant_alert, MaRpf_size_b1, MaRpf_weight_bold */
+.MaRpf_text {
+  /* Ganti gaya sesuai kebutuhan */
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+.MaRpf_variant_alert {
+  /* Ganti gaya sesuai kebutuhan */
+  color: #f15c59;
+  font-weight: bold;
+}
+
+.MaRpf_size_b1 {
+  /* Ganti gaya sesuai kebutuhan */
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.MaRpf_weight_bold {
+  /* Ganti gaya sesuai kebutuhan */
+  font-weight: 700;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "price-title book-btn"
+    "price-value book-btn";
+  grid-row-gap: 6px;
+  row-gap: 6px;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view .TotalPayment_price {
+  background-color: unset;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.MaRpF_button.MaRpF_size_large {
+  height: var(--button-height);
+  padding: 0 var(--button-horizontal-padding);
+  min-width: var(--button-min-width);
+  border-radius: var(--button-border-radius);
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+/* Tambahkan ini untuk menetapkan nilai --button-height */
+.MaRpF_button.MaRpF_size_large {
+  --button-height: 52px;
+  --button-horizontal-padding: 40px;
+  --button-min-width: 120px;
+  --button-border-radius: 8px;
+  --icon-margin-right: 20px;
+  --icon-dimension: 20px;
+}
+
+.MaRpF_button {
+  background-color: #9c9c9c;
+  color: white; /* Opsional: Mengubah warna teks agar kontras dengan latar belakang */
+  border: #9c9c9c;
+  cursor: not-allowed;
+}
+
+.MaRpF_button.selected {
+  background-color: #0077f7;
+  color: white; /* Opsional: Mengubah warna teks agar kontras dengan latar belakang */
+  border: #0077f7;
+  cursor: pointer;
+}
+
+.radio {
+  display: grid;
+  justify-content: flex-start;
+  gap: 40px; /* Adjust as needed for the space between radio buttons */
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.mb-3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+  position: relative;
+}
+
+.form-control:hover,
+.form-control:focus {
+  border: 2px solid #131212; /* Change the color as desired */
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+/* Default styles for form-check-input */
+.form-check-input {
+  margin-top: 0.75em;
+  cursor: pointer;
+  border: 1px solid transparent; /* Set the default border color to transparent */
+}
+
+.form-check-input:checked {
+  color: blue;
+}
+
+.form-check-input:not(:checked) {
+  border: 1px solid #1a1a1a; /* Remove the border when not checked */
+}
+
+.payment-header-container {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form-check-label {
+  margin-left: 10px; /* Adjust the margin-left value to your preference */
+  font-size: 20px;
+}
+
+a {
+  color: white; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+a:hover {
+  color: white; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}

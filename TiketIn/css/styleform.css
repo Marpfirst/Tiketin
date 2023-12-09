@@ -1,0 +1,587 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Navbar start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 1px;
+}
+
+.sub-menu p {
+  margin-top: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+/* Navbar end */
+
+.main-color {
+  background-color: #0b0b0b !important;
+}
+
+.dekstopheading {
+  padding-bottom: 30px;
+  background-color: rgb(253, 253, 255);
+  border-top: 1px solid #e8d8d8;
+}
+
+.dekstopdetail {
+  display: flex;
+  align-items: center;
+  border-top: #000000;
+}
+
+.chevron-left {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0; /* Menghapus jarak kiri */
+  margin-right: 10px; /* Menambahkan jarak kanan ke tombol chevron */
+}
+
+.chevron-left svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.h3size {
+  margin-top: 28px;
+}
+
+@media (min-width: 840px) {
+  .pricetiers_main_wrapper .containerprice {
+    padding: 0 120px;
+    background-color: #f4f7fe;
+  }
+}
+
+@media (min-width: 840px) {
+  .pricetierswrap {
+    flex-direction: row;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    column-gap: 24px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.pricetierswrap {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f7fe;
+}
+
+@media (min-width: 840px) {
+  .packageselectionwrap {
+    border-radius: 1px;
+    overflow: hidden;
+  }
+}
+.packageselectionwrap {
+  background-color: #e7f2ff;
+  padding: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 430px;
+  margin-bottom: 20%;
+}
+.packageselectionwrap {
+  flex: 1; /* Container packageselectionwrap akan memenuhi sisa ruang yang tersisa */
+}
+
+@media (min-width: 840px) {
+  .packageselectionwrap .packageselectionheading {
+    padding: 10px 10px; /* Mengurangi padding di sisi kiri dan kanan */
+  }
+}
+
+.containerpackage {
+  max-width: 430px;
+  padding-bottom: 7%;
+}
+
+.ContactDetails_wrapper {
+  padding-bottom: 100px;
+}
+
+/* Menyesuaikan ukuran font dan jarak pada .packageselectionheading */
+.packageselectionwrap .packageselectionheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Menyesuaikan tulisan "Selection Package" agar agak ke sebelah kiri */
+  align-items: center;
+  column-gap: 10px; /* Menambahkan jarak antara tulisan dan tombol chevron */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.packagecardwrap {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: border-color 0.3s;
+  height: 100%;
+  min-height: 368px;
+}
+
+.packagebenefit_package_benefit {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+}
+
+.PackageBenefit_feature_with_icon {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.divider_vertical_default {
+  border-left: 1px solid #d8dce8;
+}
+
+.p2_horizontal {
+  border-top: 1px solid #d8dce8;
+}
+
+/* Menambahkan garis pemisah di antara teks "YELLOW A" dan "See redemption" */
+.packagecard_divider.p2_horizontal {
+  width: 100%;
+  margin-top: 12px;
+  border-top: 1px solid #d8dce8;
+}
+
+@media (min-width: 840px) {
+  .divider {
+    --border-main-width: 1px;
+    --border-bold-width: 8px;
+  }
+}
+
+/* Mengatur teks sub di bawah teks utama dan mengubah warna menjadi abu */
+.PackageBenefit_feature_with_dots span {
+  font-size: 0.9em;
+  color: #aeb2be;
+  display: block;
+  margin-top: 4px;
+}
+
+.PackageBenefit_feature_with_icon.PackageBenefit_feature_with_subtitle {
+  align-items: flex-start;
+}
+
+.textvariant_alert {
+  color: #f15c59;
+  font-weight: bold;
+}
+
+@media (min-width: 840px) {
+  .pricetierswrap > :first-child,
+  .pricetierswrap > :nth-child(2) {
+    flex: 1 1;
+  }
+}
+
+.pricetierswrap .pricetiers_arrow_indicator {
+  position: relative;
+}
+
+@media (min-width: 840px) {
+  .ContactDetails {
+    margin-top: 8px;
+    padding: 20px 16px;
+  }
+}
+
+.ContactDetails {
+  padding: 16px 40px;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust the value to your preference for the gap */
+}
+
+@media (min-width: 840px) {
+  .TotalPayment_wrapper {
+    margin-top: 8px;
+    padding: 20px 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.TotalPayment_wrapper {
+  padding: 16px 40px;
+  margin-top: 6px;
+  background-color: #fff;
+}
+
+.MaRpf_weight_bold {
+  font-weight: 700;
+}
+
+.MaRpf_size_b1 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (min-width: 840px) {
+  .TotalPayment_wrapper {
+    margin-top: 8px;
+    padding: 20px 16px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.TotalPayment_wrapper {
+  padding: 16px 40px;
+  margin-top: 6px;
+  background-color: #fff;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_date_view {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 8px;
+}
+
+.pricetierswrap {
+  display: flex;
+  flex-direction: row; /* Mengatur arah flex ke horizontal */
+  justify-content: space-between;
+  align-items: center; /* Mengatur alignment ke tengah vertikal */
+}
+
+.packagecardwrap {
+  margin-left: 20px;
+}
+
+.text_size_b1._weight_bold {
+  font-weight: bold;
+  /* Gaya lain sesuai kebutuhan Anda */
+}
+
+.text_size_b3 {
+  font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan Anda */
+  margin-left: 10px; /* Menambahkan jarak antara .text_size_b1._weight_bold dan .text_size_b3 */
+  white-space: nowrap; /* Mencegah teks melingkar jika terlalu panjang */
+}
+
+.TicketQuantity_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1px;
+}
+
+@media (min-width: 840px) {
+  .TicketQuantity_wrapper {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 1px 1px;
+  }
+}
+
+/* CSS di atas elemen MaRpf_text, MaRpf_variant_alert, MaRpf_size_b1, MaRpf_weight_bold */
+.MaRpf_text {
+  /* Ganti gaya sesuai kebutuhan */
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+}
+
+.MaRpf_variant_alert {
+  /* Ganti gaya sesuai kebutuhan */
+  color: #f15c59;
+  font-weight: bold;
+}
+
+.MaRpf_size_b1 {
+  /* Ganti gaya sesuai kebutuhan */
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.MaRpf_weight_bold {
+  /* Ganti gaya sesuai kebutuhan */
+  font-weight: 700;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "price-title book-btn"
+    "price-value book-btn";
+  grid-row-gap: 6px;
+  row-gap: 6px;
+}
+
+.TotalPayment_wrapper .TotalPayment_desktop_view .TotalPayment_price {
+  background-color: unset;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+.MaRpF_button.MaRpF_size_large {
+  height: var(--button-height);
+  padding: 0 var(--button-horizontal-padding);
+  min-width: var(--button-min-width);
+  border-radius: var(--button-border-radius);
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+/* Tambahkan ini untuk menetapkan nilai --button-height */
+.MaRpF_button.MaRpF_size_large {
+  --button-height: 52px;
+  --button-horizontal-padding: 40px;
+  --button-min-width: 120px;
+  --button-border-radius: 8px;
+  --icon-margin-right: 8px;
+  --icon-dimension: 20px;
+}
+
+.MaRpF_button {
+  background-color: #0077f7;
+  color: white; /* Opsional: Mengubah warna teks agar kontras dengan latar belakang */
+  border: #0077f7;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px; /* Adjust as needed for the space between radio buttons */
+}
+
+:root {
+  --space-8: 8px;
+  --font-size-desktop-b3: 14px;
+  --line-height-desktop-b3: 20px;
+  --font-size-desktop-b2: 16px;
+  --color-N800: #303135;
+  --form-element-gap: 20px;
+}
+
+.mb-3 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: var(--space-8);
+  left: 16px;
+  font-size: var(--font-size-desktop-b3);
+  line-height: var(--line-height-desktop-b3);
+  color: var(--color-N800);
+  pointer-events: none; /* Ensure the label doesn't interfere with input events */
+  transition: all 0.3s;
+}
+
+.form-control {
+  font-size: var(--font-size-desktop-b2);
+  line-height: 1.5; /* Adjusted line-height for the input */
+  color: var(--color-N800);
+  padding: calc(var(--space-8) + var(--line-height-desktop-b3)) 16px 8px;
+  box-shadow: none;
+  background: none;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.form-control:hover,
+.form-control:focus {
+  border: 2px solid #131212; /* Change the color as desired */
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+  top: calc(var(--space-8) / 2);
+  font-size: var(--font-size-desktop-b2);
+  line-height: var(--line-height-desktop-b3);
+  color: var(--color-N800);
+}
+
+.form-group {
+  margin-bottom: var(--form-element-gap);
+}
+
+/* Add styles as needed */
+.titleselect {
+  color: #f15c59;
+}
+
+/* Default styles for form-check-input */
+.form-check-input {
+  cursor: pointer;
+  border: 1px solid transparent; /* Set the default border color to transparent */
+}
+
+/* Change styles on click */
+.form-check-input:checked {
+  color: blue;
+  border: 1px solid #f15c59; /* Change the border color when checked */
+}
+
+.form-check-input:not(:checked) {
+  border: 1px solid #f15c59; /* Remove the border when not checked */
+}
+
+.selectMessage {
+  margin-bottom: 100px;
+}
+
+.ContactTitle {
+  font-size: 30px;
+  padding: 5px 40px;
+}
+
+a {
+  color: white; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+a:hover {
+  color: white; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}

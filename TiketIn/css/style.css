@@ -1,0 +1,264 @@
+:root {
+  --primary: #53b6d7;
+  --bg: #010101;
+}
+
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Navbar start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #0b0b0b;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 1px;
+}
+
+.sub-menu p {
+  margin-top: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+}
+/* Navbar end */
+
+.fotobesar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-color {
+  background-color: #0b0b0b !important;
+}
+
+#no-events-message {
+  display: none; /* Sembunyikan pesan awalnya */
+  color: rgb(5, 5, 5); /* Atur warna pesan sesuai keinginan Anda */
+  font-size: 15px; /* Sesuaikan ukuran teks sesuai keinginan Anda */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.errortext {
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.hovered-card {
+  transition: 0.3s;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  width: calc(
+    33.33% - 20px
+  ); /* Lebih besar margin untuk celah yang lebih luas */
+  margin: 10px; /* Tambahkan margin yang lebih besar di sekitar kartu */
+  padding: 10px; /* Tambahkan padding agar kontennya tidak terlalu dekat dengan tepi kartu */
+}
+
+.hovered-card:hover {
+  transform: scale(1.1);
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Untuk memberikan jarak horizontal antara kartu */
+}
+a {
+  color: inherit; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+a:hover {
+  color: inherit; /* Menurunkan warna teks dari elemen induk */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+.text-center {
+  color: #f15c59;
+}
+
+.top {
+  height: 60px;
+  width: 80%;
+  border-radius: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+/* Gaya input tanggal */
+.date-input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px; /* Ubah ukuran font sesuai keinginan Anda */
+  color: #333; /* Ubah warna teks input sesuai keinginan Anda */
+  padding: 8px; /* Atur padding sesuai keinginan Anda */
+}
+
+input::-webkit-datetime-edit {
+  color: transparent;
+}
+input:focus::-webkit-datetime-edit {
+  color: #000;
+}
+
+/* Gaya untuk Input Searchbar */
+.searchBar-input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 135vh;
+  margin-right: 20vh;
+  /* Atur gaya sesuai keinginan Anda */
+}
+
+.searchBar-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Sesuaikan margin dan gaya sesuai kebutuhan */
+.glass {
+  margin-right: 10px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown .btn-secondary {
+  background-color: transparent; /* Mengatur latar belakang tombol menjadi transparan */
+  border: none; /* Menghilangkan border */
+  color: #000; /* Mengatur warna teks */
+}
+
+.dropdown .btn-secondary:hover {
+  background-color: transparent; /* Latar belakang tetap transparan saat tombol dihover */
+}
+
+.fa-location-dot {
+  font-size: 30px; /* Sesuaikan ukuran logo sesuai kebutuhan Anda */
+  margin-right: 5px; /* Jarak antara logo dan dropdown */
+}
