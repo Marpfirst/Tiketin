@@ -75,18 +75,21 @@
         <div class="data" style="padding-top: 50px">
           <div class="top">
             <!-- searchbar-->
-            <div class="searchBar">
-              <div class="searchBar-content">
-                <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
-                <input
-                  placeholder="Cari..."
-                  id="searchBar"
-                  name="searchBar"
-                  type="text"
-                  class="searchBar-input"
-                />
+            <div class="bordersearchbar">
+              <div class="searchBar">
+                <div class="searchBar-content">
+                  <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                  <input
+                    placeholder="Cari..."
+                    id="searchBar"
+                    name="searchBar"
+                    type="text"
+                    class="searchBar-input"
+                  />
+                </div>
               </div>
             </div>
+
             <!-- dropdown -->
             <div class="dropdown">
               <i class="fa-solid fa-location-dot"></i>
@@ -124,39 +127,15 @@
                 </li>
               </ul>
             </div>
-            <hr
-              style="
-                clear: both;
-                margin: 15px 0;
-                border: 1px solid #eee;
-                border-top: none;
-              "
-            />
           </div>
 
           <!-- baris baru -->
-          <div class="row" style="padding-top: 100px">
-            <div class="col-sm-6 col-lg-3">
-              <h3 id="event-count" class="event-title">6 Event terlihat</h3>
-            </div>
+          <div class="barisevent" style="padding-top: 100px">
+            <h3 id="event-count" class="event-title">6 Event terlihat</h3>
 
-            <!-- sort button -->
-            <div class="col-sm-6 col-lg-3">
-              <div
-                class="filter-condition"
-                style="margin-left: 840px; margin-top: 9px"
-              >
-                <select name="" id="select">
-                  <option value="Default">Default</option>
-                  <option value="LowToHigh">Low to high</option>
-                  <option value="HighToLow">High to low</option>
-                </select>
-              </div>
-            </div>
-
-            <!-- calendar -->
-            <div class="col-sm-6 col-lg-3">
-              <div class="form-question" style="margin-left: 350px">
+            <div class="calsort">
+              <!-- calendar -->
+              <div class="form-question">
                 <div class="input-container">
                   <input
                     type="date"
@@ -165,6 +144,14 @@
                     class="date-input"
                   />
                 </div>
+              </div>
+              <!-- sort button -->
+              <div class="filter-condition">
+                <select name="" id="select">
+                  <option value="Default">Default</option>
+                  <option value="LowToHigh">Low to high</option>
+                  <option value="HighToLow">High to low</option>
+                </select>
               </div>
             </div>
           </div>
