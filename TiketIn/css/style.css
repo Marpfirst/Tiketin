@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
+  font-family: "cursive", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Sans",
     Arial, sans-serif;
 }
 
@@ -144,10 +144,31 @@ nav ul li a {
   background-color: #0b0b0b !important;
 }
 
+.barisevent {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calsort {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.event-title {
+  margin: 0; /* Menghilangkan margin bawaan dari heading */
+}
+
 #no-events-message {
   display: none; /* Sembunyikan pesan awalnya */
   color: rgb(5, 5, 5); /* Atur warna pesan sesuai keinginan Anda */
   font-size: 15px; /* Sesuaikan ukuran teks sesuai keinginan Anda */
+  margin-top: 100px;
 }
 
 img {
@@ -161,6 +182,9 @@ img {
   overflow: hidden;
 }
 
+.errorbutton {
+  margin-bottom: 100px;
+}
 .hovered-card {
   transition: 0.3s;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
@@ -195,15 +219,25 @@ a:hover {
 }
 
 .top {
-  height: 60px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   border-radius: 100px;
-  background-color: transparent;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px;
+}
+
+.bordersearchbar {
+  height: 100%;
+  width: 80%;
+  border-radius: 100px;
   border: 2px solid black;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 /* Gaya input tanggal */
@@ -223,14 +257,16 @@ input:focus::-webkit-datetime-edit {
   color: #000;
 }
 
+.searchBar {
+  flex: auto;
+  margin-right: 10px;
+}
 /* Gaya untuk Input Searchbar */
 .searchBar-input {
   border: none;
   outline: none;
   background: none;
-  width: 135vh;
-  margin-right: 20vh;
-  /* Atur gaya sesuai keinginan Anda */
+  width: 100%;
 }
 
 .searchBar-content {
