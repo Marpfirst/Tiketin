@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.left-side {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 80%;
+  height: auto;
+}
+
+.right-side {
+  flex: 1;
+  background-color: #242321;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.signup-form {
+  width: 80%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: none;
+  border-radius: 8px;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input_box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input_box input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  background-color: #ccc;
+  color: #242321;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #fdfdfd;
+  color: #007bff;
+  border: 1px solid #e0e0e0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+  overflow: hidden;
+}
+.button:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateX(5px);
+  border-color: #007bff;
+}
+
+.signup-link {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  font-weight: bold;
+  color: #007bff;
+}
+.input_box i.email,
+.input_box i.password {
+  left: 0;
+}
+
+.input_box input:focus {
+  outline: 0;
+}
+
+.input_box i.uil-check-circle,
+.input_box i.uil-exclamation-circle {
+  visibility: hidden;
+  position: absolute;
+  top: 30%;
+  right: 8%;
+}
+
+.input_box small {
+  color: #e74c3c;
+  position: absolute;
+  margin-left: 25px;
+  top: 45px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.input_box.error small {
+  visibility: visible;
+}
+
+.input_box.success .uil-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.input_box.error i.uil-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.input_box.error input {
+  border: 3px solid;
+  border-color: #e74c3c; /* Add red border for error state */
+}
+
+.input_box.success input {
+  border: 3px solid;
+  border-color: #2ecc71; /* Add red border for error state */
+}
+
+.input_box i.pw_hide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1%;
+  font-size: 18px;
+  cursor: pointer;
+}
