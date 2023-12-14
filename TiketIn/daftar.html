@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiketin</title>
+    <link rel="stylesheet" href="css/styledaftar.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <img src="/image/login.png" alt="Your Image" />
+      </div>
+      <div class="right-side">
+        <div class="signup-form">
+          <h2>Sign up</h2>
+          <form id="signupForm">
+            <div class="input_box">
+              <i class="uil uil-user"></i>
+              <input
+                id="username"
+                type="text"
+                placeholder="Enter your name"
+                maxlength="60"
+              />
+              <i class="uil uil-check-circle"></i>
+              <i class="uil uil-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="input_box">
+              <i class="uil uil-envelope-alt email"></i>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                maxlength="60"
+              />
+              <i class="uil uil-check-circle"></i>
+              <i class="uil uil-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div class="input_box">
+              <i class="uil uil-lock password" id="eyeIconPassword"></i>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                maxlength="60"
+              />
+              <i class="uil uil-check-circle"></i>
+              <i class="uil uil-exclamation-circle"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+              <small>Error message</small>
+            </div>
+            <div class="input_box">
+              <i class="uil uil-lock password" id="eyeIconConfirmPassword"></i>
+              <input
+                id="password2"
+                type="password"
+                placeholder="Re-Enter your password"
+                maxlength="60"
+              />
+              <i class="uil uil-check-circle"></i>
+              <i class="uil uil-exclamation-circle"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+              <small>Error message</small>
+            </div>
+            <button class="button">Sign up</button>
+          </form>
+          <div class="signup-link">
+            Sudah punya akun? <a href="login.html">Gas login!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/showhide.js"></script>
+    <script src="js/tes.js"></script>
+    <!-- Include the validation script -->
+  </body>
+</html>
